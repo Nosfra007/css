@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"content="width=devince-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 100px;
+        }
+
+        .box{
+            background-color: rgb(185, 226, 178);
+            border-radius: 200px;
+            width: 200px;
+            height: 200px;
+
+
+        }
+        .box:hover {
+            animation-name: rotate;
+            animation-duration: 1.7s;
+        }
+        @keyframes rotate {
+            0%{
+                transform: rotate(0);
+            }
+            -100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Francesco</div>
+</body>
+</html>html>
