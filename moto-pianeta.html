@@ -6,44 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      <style>
-        body {  background-image: url('https://leganerd.com/wp-content/uploads/2022/01/Sistema-Solare-e1546872321823.jpg'); }
-    #earth {
-        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVAa3TuR2el0twpa9iYuceZjiYLXGE3FBfWg&usqp=CAU');
-        width: 70px;
-        height: 70px;
-        background-size: 190px;
-        margin: 80px auto;
-        border-radius: 50%;
-        position: relative;
-        animation-name: move,scale,rotate;
-        animation-duration: 4s,4s,4s;
-        animation-iteration-count: infinite,infinite,infinite;
-    }
-
-    @keyframes move {
-        0%   { left: 200px;  }
-        70%  { left: -200px; }
-        100% { left: 200px;  }
-    }
-
-    @keyframes scale {
-        0%  { transform: scale(1);   }
-        32% { transform: scale(0.4); animation-timing-function:  ease-in; }
-        70% { transform: scale(1); animation-timing-function:  ease-in;  }
-        75% { transform: scale(1.2);  animation-timing-function:  ease-in-out; }
-        86% { transform: scale(2);  }
-        98% { transform: scale(1.2); }
-        100%{ transform: scale(1); }
-    }
-
-    @keyframes rotate {
-        0% { background-position: 0px; }
-        100% { background-position: 190px; }
-    }
-</style>
-    </head>
+        body { background-image: url("https://leganerd.com/wp-content/uploads/2022/01/Sistema-Solare-e1546872321823.jpg"); }
+        #earth {
+            background-image: url('https://media.istockphoto.com/id/1193952997/it/vettoriale/mappa-del-mondo-topografica-fisica-illustrazione-dettagliata-vettoriale.jpg?s=612x612&w=0&k=20&c=cHUXUwcE8p07t-mapP1vUSlp8VLfoW78UOLqOOc72EE=');
+            width: 70px;
+            height: 70px;
+            background-size: 190px;
+            margin: 80px auto;
+            border-radius: 50%;
+            position: relative;
+            animation-name: move,scale,rotate;
+            animation-duration: 4s,4s,4s;
+            animation-iteration-count: infinite,infinite,infinite;
+        }
+    
+        @keyframes move {
+            0%   { left: 200px;  }
+            70%  { left: -200px; }
+            100% { left: 200px;  }
+        }
+    
+        @keyframes scale {
+            0%  { transform: scale(1);   }
+            32% { transform: scale(0.4); animation-timing-function:  ease-in; }
+            70% { transform: scale(1); animation-timing-function:  ease-in;  }
+            75% { transform: scale(1.2);  animation-timing-function:  ease-in-out; }
+            86% { transform: scale(2);  }
+            98% { transform: scale(1.2); }
+            100%{ transform: scale(1); }
+        }
+    
+        @keyframes rotate {
+            0% { background-position: 0px; }
+            100% { background-position: 190px; }
+        }
+    </style>
+</head>
 <body>
-    <div id="earth"></div>
+        <div id="earth"></div>
 </body>
 </html>
