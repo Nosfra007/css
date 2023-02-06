@@ -5,42 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    body { background-color: rgb(32, 5, 98); }
-    #earth {
-        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCg7wmRHK61SDlEk6fBYPWpnd4H6Xn_GBFEyXkvfXh9gJJL_j-bhhiltafSYFH40j2l50&usqp=CAU");
-        width: 70px;
-        height: 70px;
-        background-size: 190px;
-        margin: 80px auto;
-        border-radius: 50%;
-        position: relative;
-        animation-name: move,scale,rotate;
-        animation-duration: 4s,4s,4s;
-        animation-iteration-count: infinite,infinite,infinite;
-    }
-
-    @keyframes move {
-        0%   { left: 200px;  }
-        70%  { left: -200px; }
-        100% { left: 200px;  }
-    }
-
-    @keyframes scale {
-        0%  { transform: scale(1);   }
-        32% { transform: scale(0.4); animation-timing-function:  ease-in; }
-        70% { transform: scale(1); animation-timing-function:  ease-in;  }
-        75% { transform: scale(1.2);  animation-timing-function:  ease-in-out; }
-        86% { transform: scale(2);  }
-        98% { transform: scale(1.2); }
-        100%{ transform: scale(1); }
-    }
-
-    @keyframes rotate {
-        0% { background-position: 0px; }
-        100% { background-position: 190px; }
-    }
-</head>
+    <style>
+        body { background-color: rgb(32, 5, 98); }
+        #earth {
+            background-image: url("https://i.pinimg.com/736x/bf/de/73/bfde73a501b4c46dffaafda9fae7e6f6.jpg");
+            width: 70px;
+            height: 70px;
+            background-size: 190px;
+            margin: 80px auto;
+            border-radius: 50%;
+            position: relative;
+            animation-name: move,scale,rotate;
+            animation-duration: 4s,4s,4s;
+            animation-iteration-count: infinite,infinite,infinite;
+        }
+    
+        @keyframes move {
+            0%   { left: 200px;  }
+            70%  { left: -200px; }
+            100% { left: 200px;  }
+        }
+    
+        @keyframes scale {
+            0%  { transform: scale(1);   }
+            32% { transform: scale(0.4); animation-timing-function:  ease-in; }
+            70% { transform: scale(1); animation-timing-function:  ease-in;  }
+            75% { transform: scale(1.2);  animation-timing-function:  ease-in-out; }
+            86% { transform: scale(2);  }
+            98% { transform: scale(1.2); }
+            100%{ transform: scale(1); }
+        }
+    
+        @keyframes rotate {
+            0% { background-position: 0px; }
+            100% { background-position: 190px; }
+        }
+    </style>
+    </head>
 <body>
-    <div id="earth"></div>   
+    <div id="earth"></div>
 </body>
 </html>
